@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #12304A;
+  --color-navy-dark: #0A1C2C;
+  --color-navy-light: #1A4469;
+  --color-school-blue: #1D4ED8;
+  --color-school-blue-light: #3B82F6;
+  --color-gold: #D4A72C;
+  --color-gold-light: #F6D878;
+  --color-gold-hover: #B88E23;
+  --color-dark-text: #172B3A;
+  --color-muted-text: #64748B;
+  --color-light-bg: #F8FAFC;
+  --color-light-card: #F1F5F9;
+}
+
+:root {
+  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-dark-text);
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom utility styles */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Halus dan nyaman saat scrolling */
+html {
+  scroll-behavior: smooth;
+}
